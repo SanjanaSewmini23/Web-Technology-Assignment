@@ -1,0 +1,82 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; 
+}
+
+.main-container {
+    position: relative;
+    width: 100vw; 
+    height: 100vh;
+    background-color: white;
+}
+
+.box {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+}
+.red { background-color: red; top: 0; left: 0; }
+.green { background-color: green; top: 0; left: 50%; }
+.orange { background-color: yellow; top: 50%; left: 0; }
+.pink { background-color: purple; top: 50%; left: 50%; }
+
+.corner-circle {
+    position: absolute;
+    width: 12vw; 
+    height: 12vw;
+    background-color: white;
+    border-radius: 50%;
+    z-index: 1;
+}
+.top-left { top: -6vw; left: -6vw; }
+.top-center { top: -6vw; left: 44vw; }
+.top-right { top: -6vw; right: -6vw; }
+.bottom-left { bottom: -6vw; left: -6vw; }
+.bottom-center { bottom: -6vw; left: 44vw; }
+.bottom-right { bottom: -6vw; right: -6vw; }
+
+.center-white-box {
+    position: absolute;
+    width: 40vh;
+    height: 40vh;
+    background-color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.center-red-circle {
+    width: 65%;
+    height: 65%;
+    background-color: red;
+    border-radius: 50%;
+}
+
+.sub-element {
+    position: absolute;
+    width: 30vh;
+    height: 30vh;
+    background-color: white;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+}
+.pos-1 { top: 25%; left: 25%; }
+.pos-2 { top: 25%; left: 75%; }
+.pos-3 { top: 75%; left: 25%; }
+.pos-4 { top: 75%; left: 75%; }
+
+.red-square {
+    width: 45%;
+    height: 45%;
+    background-color: red;
+}
